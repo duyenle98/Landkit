@@ -1,6 +1,8 @@
 body {
     font-family: sans-serif;
     margin: 0;
+    color: #161c2d;
+    font-weight: 400;
 }
 
 a {
@@ -265,12 +267,11 @@ a.link-text span {
 }
 
 .menu .item-3 .content .icon {
-    margin: 0 20px 0 4px;
+    margin-right: 16px;
 }
 
-.menu .item-3 .content .icon i {
-    font-size: 34px;
-    color: #97adf5;
+.menu .item-3 .content .icon img {
+    width: 36px;
 }
 
 .menu .item-3 .content:nth-child(2) .icon i {
@@ -329,104 +330,6 @@ a.link-text span {
     display: block !important;
 }
 
-.welcome {
-    display: flex;
-    align-items: center;
-    margin-top: 96px;
-}
-
-.welcome .content {
-    flex-basis: 50%;
-}
-
-.welcome .image {
-    flex-basis: 50%;
-}
-
-.welcome .image img {
-    width: 100%;
-}
-
-.welcome .content h1 {
-    color: #161c2d;
-    font-size: 48px;
-    font-weight: 400;
-    margin-bottom: 16px;
-}
-
-.welcome .content h1 span {
+.menu .menu-item .item-4 .menu-dropdown:hover i {
     color: #335eea;
-}
-
-.welcome .content p {
-    color: #869ab8;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 33px;
-    margin-bottom: 48px;
-}
-
-.welcome .content .link .link-1 {
-    display: inline-block;
-    background-color: #335eea;
-    color: #fff;
-    padding: 14px 21px;
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 27px;
-    margin-right: 4px;
-    transition: all 0.3s;
-}
-
-.welcome .content .link .link-1 i {
-    margin-left: 12px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.welcome .content .link .link-1:hover {
-    background-color: #1746e0;
-    transform: translateY(-3px);
-}
-
-.welcome .content .link .link-2 {
-    display: inline-block;
-    background-color: rgba(51, 94, 234, 0.1);
-    color: #335eea;
-    padding: 14px 21px;
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 27px;
-    transition: all 0.3s;
-}
-
-.welcome .content .link .link-2:hover {
-    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
-    background-color: rgba(51, 94, 234, 0.15);
-    transform: translateY(-3px);
-}
-
-.built {
-    display: flex;
-    margin-top: 96px;
-}
-
-.built .content {
-    flex-basis: 33.3333%;
-}
-
-.built .content h4 {
-    color: #161c2d;
-    font-size: 21px;
-    font-weight: 400;
-    margin-bottom: 8px;
-}
-
-.built .content p {
-    color: #869ab8;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 27px;
 }

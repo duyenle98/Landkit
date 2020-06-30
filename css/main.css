@@ -1,0 +1,360 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.welcome .content {
+    flex-basis: 50%;
+}
+
+.welcome .image {
+    flex-basis: 50%;
+}
+
+.welcome .image img {
+    width: 100%;
+}
+
+.welcome .content h1 {
+    color: #161c2d;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.welcome .content h1 span {
+    color: #335eea;
+}
+
+.welcome .content p {
+    color: #869ab8;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33px;
+    margin-bottom: 48px;
+}
+
+.welcome .content .link .link-1 {
+    display: inline-block;
+    background-color: #335eea;
+    color: #fff;
+    padding: 14px 21px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-right: 4px;
+    transition: all 0.3s;
+}
+
+.welcome .content .link .link-1 i {
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.welcome .content .link .link-1:hover {
+    background-color: #1746e0;
+    transform: translateY(-3px);
+}
+
+.welcome .content .link .link-2 {
+    display: inline-block;
+    background-color: rgba(51, 94, 234, 0.1);
+    color: #335eea;
+    padding: 14px 21px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 27px;
+    transition: all 0.3s;
+}
+
+.welcome .content .link .link-2:hover {
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+    background-color: rgba(51, 94, 234, 0.15);
+    transform: translateY(-3px);
+}
+
+.built {
+    display: flex;
+    margin-top: 96px;
+}
+
+.built .content {
+    flex-basis: 33.3333%;
+}
+
+.built .content .icon img {
+    width: 48px;
+    margin-bottom: 12px;
+}
+
+.built .content h4 {
+    color: #161c2d;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.built .content p {
+    color: #869ab8;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.wrapper-social {
+    border-top: 1px solid #f1f4f8;
+    margin-top: 96px;
+}
+
+.social {
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.social .content {
+    flex-basis: 16.6667%;
+}
+
+.social .content img {
+    width: 100%;
+}
+
+.wrapper-resource {
+    background-color: #f9fbfd;
+    padding-top: 96px;
+}
+
+.resource {
+    display: flex;
+    align-items: center;
+}
+
+.resource .content-1 {
+    flex-basis: 50%;
+    background-color: #fff;
+    margin-right: 130px;
+    border-radius: 6px;
+    box-shadow: 0 0 40px #eee;
+    transition: all 0.3s;
+}
+
+.resource .content-1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 80px #ddd;
+}
+
+.resource .content-1 .wrapper-from {
+    padding: 32px;
+}
+
+.resource .content-1 img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.resource .content-1 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.resource .content-1 form input {
+    border: none;
+    border-bottom: 1px solid #f1f4f8;
+    padding: 13px 0;
+    color: #161c2d;
+    line-height: 27px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.resource .content-1 form input:focus,
+.resource .content-1 form button {
+    outline: none;
+}
+
+.resource .content-1 form button {
+    padding: 14px 21px;
+    background-color: #42ba96;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    line-height: 27px;
+}
+
+.resource .content-2 {
+    flex-basis: 50%;
+}
+
+.resource .content-2 .group-item {
+    display: flex;
+}
+
+.resource .content-2 .group-item .item {
+    flex-basis: 50%;
+}
+
+.resource .content-2 h3 {
+    color: #161c2d;
+    font-size: 31px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.resource .content-2 h3 span {
+    color: #42ba96;
+}
+
+.resource .content-2 > p {
+    color: #869ab8;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+
+.resource .content-2 .item p {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.resource .content-2 .item p span:first-child {
+    background-color: rgba(66, 186, 150, 0.1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.resource .content-2 .item i {
+    color: #42ba96;
+    font-size: 12px;
+}
+
+.resource .content-2 .item p span:last-child {
+    color: #42ba96;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.theme {
+    flex-direction: row-reverse;
+    margin-top: 96px;
+}
+
+.theme .image {
+    flex-basis: 50%;
+}
+
+.theme .image img {
+    width: 100%;
+    transform: rotateY(-35deg) rotateX(15deg);
+}
+
+.theme .group-item {
+    flex-direction: column;
+}
+
+.theme .group-item .item {
+    display: flex;
+}
+
+.theme .icon {
+    margin-right: 24px;
+}
+
+.theme .icon img {
+    width: 48px;
+}
+
+.theme .item .text h4 {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.theme .item .text p {
+    color: #869ab8;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.theme.resource .content-2 .item p {
+    margin-bottom: 0;
+}
+
+.customer {
+    margin-top: 128px;
+}
+
+.customer .intro {
+    max-width: 65%;
+    padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.customer .intro h2 {
+    font-size: 31px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.customer .intro p {
+    font-size: 19px;
+    color: #869ab8;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 64px;
+}
+
+.customer .content {
+    display: flex;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.customer .content .image {
+    flex-basis: 50%;
+}
+
+.customer .content .text img {
+    max-width: 41.6667%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.customer .content .text {
+    flex-basis: 50%;
+    padding: 64px 40px;
+    text-align: center;
+}
+
+.customer .content .text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.customer .content .text p.author {
+    color: #869ab8;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
