@@ -329,6 +329,27 @@
 
 .customer .content .image {
     flex-basis: 50%;
+    position: relative;
+}
+
+.customer .content span {
+    width: 55px;
+    height: 55px;
+    background-color: #335eea;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: -27.5px;
+    margin-top: -27.5px;
+}
+
+.customer .content i {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .customer .content .text img {
@@ -339,9 +360,11 @@
 }
 
 .customer .content .text {
+    cursor: grab;
     flex-basis: 50%;
     padding: 64px 40px;
     text-align: center;
+    position: relative;
 }
 
 .customer .content .text p {
@@ -357,4 +380,9 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 0;
+}
+
+.customer .content .text span {
+    right: -27.5px;
+    left: auto;
 }
