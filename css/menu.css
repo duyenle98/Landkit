@@ -92,6 +92,7 @@ p {
     z-index: 1;
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.15);
     border-radius: 6px;
+    background-color: #fff;
 }
 
 .menu .menu-item .menu-dropdown:hover .item {
@@ -264,6 +265,7 @@ a.link-text span {
     z-index: 1;
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.15);
     border-radius: 6px;
+    background-color: #fff;
 }
 
 .menu .item-3 .content .icon {
@@ -316,6 +318,7 @@ a.link-text span {
 .menu .menu-item .item-4 {
     box-sizing: border-box;
     padding: 26px 0;
+    background-color: #fff;
 }
 
 .menu .menu-item .item-4 .menu-dropdown {

@@ -225,7 +225,7 @@
     margin-bottom: 16px;
 }
 
-.resource .content-2 .item p span:first-child {
+.resource .content-2 .item p span:first-child, .fair .content ul span {
     background-color: rgba(66, 186, 150, 0.1);
     width: 20px;
     height: 20px;
@@ -236,7 +236,7 @@
     margin-right: 16px;
 }
 
-.resource .content-2 .item i {
+.resource .content-2 .item i, .fair .content ul span i {
     color: #42ba96;
     font-size: 12px;
 }
@@ -332,7 +332,7 @@
     position: relative;
 }
 
-.customer .content span {
+.customer .content span.arrow {
     width: 55px;
     height: 55px;
     background-color: #335eea;
@@ -385,4 +385,118 @@
 .customer .content .text span {
     right: -27.5px;
     left: auto;
+}
+
+.business-wrapper {
+    background-color: #f1f4f8;
+}
+
+.business {
+    margin-top: 0;
+    padding-top: 144px;
+}
+
+.business .image img {
+    transform: none;
+}
+
+.business .group-item {
+    flex-direction: row;
+}
+
+.business .item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto !important;
+}
+
+.business .item h4 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.business .item h4 span {
+    transition-duration: 0.7s;
+}
+
+.business .item p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #506690;
+    line-height: 27px;
+}
+
+.fair .content .cont {
+    flex-basis: 50%;
+    border-radius: 6px;
+}
+
+.fair .content .cont:first-child {
+    box-shadow: 0 0 60px #ddd;
+}
+
+.fair .toggle span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #869ab8;
+}
+
+.fair .toggle {
+    text-align: center;
+}
+
+.fair .intro p {
+    margin-bottom: 16px;
+}
+
+.fair .content .info span.type {
+    display: inline-block;
+    color: #335eea;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    background-color: rgba(51,94,234,.1);
+    border-radius: 20px;
+}
+
+.fair .content .info p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #869ab8;
+    margin-bottom: 48px;
+}
+
+.fair .content ul {
+    list-style-type: none;
+}
+
+.fair .content ul li {
+    display: flex;
+    line-height: 27px;
+    margin-bottom: 16px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.fair .content .cont a {
+    display: block;
+    background-color: #335eea;
+    color: #fff;
+    padding: 18px 24px;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.fair .content .cont p.para {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.fair .content .cont a.contact {
+    color: #506690;
+    background-color: #d9e2ef;
 }

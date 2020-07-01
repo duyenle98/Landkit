@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/toggle-switch.css">
   </head>
   <body>
     <div class="menu container">
@@ -399,9 +400,9 @@
               ><img
                 src="./images/photo-26.jpg"
                 alt=""
-                style="width: 100%; border-radius: 6px 0 0 6px;"
+                style="width: 100%; height: 100%; border-radius: 6px 0 0 6px;"
             /></a>
-            <span><i class="fal fa-arrow-left"></i></span>
+            <span class="arrow"><i class="fal fa-arrow-left"></i></span>
           </div>
           <div class="text">
             <div class="icon"><img src="./images/airbnb-red.svg" alt="" /></div>
@@ -410,27 +411,83 @@
               I've ever used. I can't wait to use it again for my next project.”
             </p>
             <p class="author">Dave Gamache</p>
-            <span><i class="fal fa-arrow-right"></i></span>
+            <span class="arrow"><i class="fal fa-arrow-right"></i></span>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="theme resource container">
-      <div class="image">
-        <img src="./images/illustration-8.png" alt="" />
+    <div class="business-wrapper">
+      <div class="business theme resource container">
+        <div class="image">
+          <img src="./images/illustration-8.png" alt="" />
+        </div>
+        <div class="content-2" style="padding-right: 40px;">
+          <h3>
+            Stay focused on your business. <span style="color: #335eea;">Let us handle the design</span>.
+          </h3>
+          <p>
+            You have a business to run. Stop worring about cross-browser bugs,
+            designing new pages, keeping your components up to date. Let us do
+            that for you.
+          </p>
+          <div class="group-item">
+            <div class="item" style="padding-right: 24px; border-right: 1px solid #f1f4f8;">
+              <h4><span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>%</h4>
+              <p>Satisfaction</p>
+            </div>
+            <div class="item" style="padding: 0 24px; border-right: 1px solid #f1f4f8;">
+              <h4><span data-toggle="countup" data-from="0" data-to="24" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">24</span>/ <span data-toggle="countup" data-from="0" data-to="7" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">7</span>
+              </h4>
+              <p>Support</p>
+            </div>
+            <div class="item" style="padding-left: 24px;">
+              <h4><span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>k+</h4>
+              <p>Sales</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="content-2">
-        <h3>
-          Stay focused on your business. <span>Let us handle the design</span>.
-        </h3>
-        <p>
-          You have a business to run. Stop worring about cross-browser bugs,
-          designing new pages, keeping your components up to date. Let us do
-          that for you.
-        </p>
-        <div class="group-item">
-          <div class="item"></div>
+
+      <div class="fair customer container">
+        <div class="intro">
+          <h2>Fair, simple pricing for all.</h2>
+          <p>
+            All types of businesses need access to development resources, so we give you the option to decide how much you need to use. 
+          </p>
+          <div class="toggle" style="margin-bottom: 64px;">
+            <span>Annual</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>Monthly</span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="cont">
+            <div class="info" style="max-width: 64%; margin-left: auto; margin-right: auto; padding: 50px 0;">
+              <span class="type" style="margin-bottom: 24px;">Standard</span>
+              <div style="font-size: 61px;"><span style="font-size: 31px;">$</span>49<span style="font-size: 31px;">/mo</span></div>
+              <p>per seat</p>
+
+              <ul>
+                <li><span><i class="fal fa-check"></i></span>Rich, responsive landing pages</li>
+                <li><span><i class="fal fa-check"></i></span>100+ styled components</li>
+                <li><span><i class="fal fa-check"></i></span>Flexible, simple license</li>
+                <li><span><i class="fal fa-check"></i></span>Speedy build tooling</li>
+                <li style="margin-bottom: 0;"><span><i class="fal fa-check"></i></span>6 months free support included</li>
+              </ul>
+            </div>
+            <a href="#">Get it now</a>
+          </div>
+
+          <div class="cont">
+            <div class="info" style="padding: 50px;">
+              <span class="type" style="margin-bottom: 96px;">Enterprise</span>
+              <p class="para">We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.</p>
+            </div>
+            <a href="#" class="contact">Contact us</a>
+          </div>
         </div>
       </div>
     </div>
