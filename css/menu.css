@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     color: #161c2d;
     font-weight: 400;
@@ -12,6 +12,7 @@ a {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 h1,
@@ -83,6 +84,11 @@ p {
 .menu .menu-item .menu-dropdown {
     position: relative;
     display: block;
+}
+
+.menu .menu-item .item {
+    transform: translate(-50%, 0);
+    left: 50%;
 }
 
 .menu .menu-item .item-1 {
@@ -308,6 +314,7 @@ a.link-text span {
     box-sizing: border-box;
     padding: 26px 28px;
     border-radius: 6px;
+    background-color: #fff;
 }
 
 .menu .menu-item .item-4 .menu-dropdown .list-text li {
