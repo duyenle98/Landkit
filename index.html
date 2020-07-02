@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landkit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/toggle-switch.css">
+    <link rel="stylesheet" href="./css/footer.css">
   </head>
   <body>
     <div class="menu container">
@@ -23,6 +25,7 @@
           <ul>
             <ul class="menu-dropdown">
               <li><a href="#">Landings</a></li>
+              <!-- left: calc(50% - 336px); -->
               <div class="item item-1">
                 <div class="wrapper">
                   <div class="title">
@@ -315,7 +318,7 @@
         </div>
         <div class="content-2">
           <h3>
-            The most useful resource <span>ever created for developers.</span>
+            The most useful resource<br><span>ever created for developers.</span>
           </h3>
           <p>
             Using Landkit to build your site means never worrying about
@@ -448,7 +451,7 @@
         </div>
       </div>
 
-      <div class="fair customer container">
+      <div class="fair customer container" style="padding-bottom: 96px;">
         <div class="intro">
           <h2>Fair, simple pricing for all.</h2>
           <p>
@@ -466,9 +469,13 @@
         <div class="content">
           <div class="cont">
             <div class="info" style="max-width: 64%; margin-left: auto; margin-right: auto; padding: 50px 0;">
-              <span class="type" style="margin-bottom: 24px;">Standard</span>
-              <div style="font-size: 61px;"><span style="font-size: 31px;">$</span>49<span style="font-size: 31px;">/mo</span></div>
-              <p>per seat</p>
+              <div class="center" style="text-align: center;">
+                <span class="type" style="margin-bottom: 24px;">Standard</span>
+                <div style="font-size: 61px; position: relative;">
+                  <span style="font-size: 31px; position: absolute; left: 74px; top: 8px;">$</span>49
+                  <span style="font-size: 31px;">/mo</span></div>
+                <p>per seat</p>
+              </div>
 
               <ul>
                 <li><span><i class="fal fa-check"></i></span>Rich, responsive landing pages</li>
@@ -478,16 +485,116 @@
                 <li style="margin-bottom: 0;"><span><i class="fal fa-check"></i></span>6 months free support included</li>
               </ul>
             </div>
-            <a href="#">Get it now</a>
+            <a href="#" style="border-radius: 0 0 6px 6px;">Get it now</a>
           </div>
 
           <div class="cont">
-            <div class="info" style="padding: 50px;">
+            <div class="info" style="padding: 50px 60px; text-align: center;">
               <span class="type" style="margin-bottom: 96px;">Enterprise</span>
               <p class="para">We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.</p>
             </div>
-            <a href="#" class="contact">Contact us</a>
+            <a href="#" class="contact" style="border-radius: 0 0 6px 0;">Contact us</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-wrapper" style="background-color: #1c2b4f;">
+      <div class="question container">
+        <div class="top">
+          <div class="content" style="padding-right: 40px;">
+            <div class="cont" style="margin-bottom: 48px;">
+              <div class="icon">?</div>
+              <div class="text">
+                <h4>Can I use Landkit for my clients?</h4>
+                <p>Absolutely. The Bootstrap Themes license allows you to build a websites for personal use or for a client.</p>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="icon">?</div>
+              <div class="text">
+                <h4>Do I get free updates?</h4>
+                <p>Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="cont" style="margin-bottom: 48px;">
+              <div class="icon">?</div>
+              <div class="text">
+                <h4>Is there a money back guarantee?</h4>
+                <p>Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.</p>
+              </div>
+            </div>
+            <div class="cont">
+              <div class="icon">?</div>
+              <div class="text">
+                <h4>Does it work with Rails? React? Laravel?</h4>
+                <p>Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <span>Get started</span>
+          <h1>Get Landkit and save your time.</h1>
+          <p>Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.</p>
+          <a href="#">Buy it now <i class="fal fa-arrow-right" style="margin-left: 6px; font-size: 13px; font-weight: 500;"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer container">
+        <div class="footer-social" style="padding-right: 40px;">
+          <img class="logo" src="./images/brand.svg" alt="">
+          <p>A better way to build.</p>
+          <div class="icon">
+            <a href="#"><img src="./images/instagram-icon.svg" alt=""></a>
+            <a href="#"><img src="./images/facebook.svg" alt=""></a>
+            <a href="#"><img src="./images/twitter.svg" alt=""></a>
+            <a href="#"><img src="./images/pinterest-icon.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="list" style="padding-right: 40px;">
+          <h6>Products</h6>
+          <ul>
+            <li><a href="#">Page Builder</a></li>
+            <li><a href="#">UI Kit</a></li>
+            <li><a href="#">Styleguide</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="list" style="padding-right: 40px;">
+          <h6>Services</h6>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Pagebuilder</a></li>
+            <li><a href="#">UI Kit</a></li>
+          </ul>
+        </div>
+        <div class="list" style="padding-right: 40px;">
+          <h6>Connect</h6>
+          <ul>
+            <li><a href="#">Page Builder</a></li>
+            <li><a href="#">UI Kit</a></li>
+            <li><a href="#">Styleguide</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h6>Legal</h6>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Pagebuilder</a></li>
+          </ul>
         </div>
       </div>
     </div>
