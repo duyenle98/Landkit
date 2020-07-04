@@ -5,10 +5,16 @@
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer .footer-social {
-    flex-basis: 30%;
+    padding: 0 20px;
+    flex-basis: 25%;
+}
+
+.footer .list {
+    padding: 0 20px;
 }
 
 .footer .footer-social img.logo {
@@ -28,11 +34,11 @@
 }
 
 .footer .list:not(:last-child) {
-    flex-basis: 20%;
+    flex-basis: 16.6667%;
 }
 
 .footer .list:last-child {
-    flex-basis: 30%;
+    flex-basis: 25%;
 }
 
 .footer .list h6 {

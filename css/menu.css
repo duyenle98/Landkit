@@ -2,11 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     color: #161c2d;
-    font-weight: 400;
+    font-weight: 300;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none !important;
+    font-weight: 300;
 }
 
 ul {
@@ -27,11 +29,13 @@ p {
 
 .container {
     max-width: 1040px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+}
+
+.menu {
+    padding: 0 20px;
 }
 
 .menu ul {
@@ -54,10 +58,10 @@ p {
     padding: 8px 24px;
 }
 
-.menu ul .menu-item a {
+.menu ul .menu-item .menu-dropdown > li a {
     font-size: 17px;
-    font-weight: 600;
     color: #506690;
+    font-weight: 400;
 }
 
 .menu ul .menu-item li:hover a {
@@ -70,15 +74,19 @@ p {
     border-radius: 6px;
     padding: 10px 16px;
     font-size: 17px;
-    font-weight: 600;
     color: #fff;
     line-height: 27px;
     transition: all 0.3s;
+    font-weight: 400;
 }
 
 .menu ul .btn-buy a:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+}
+
+.menu ul .btn-buy i {
+    display: none;
 }
 
 .menu .menu-item .menu-dropdown {
@@ -93,16 +101,19 @@ p {
 
 .menu .menu-item .item-1 {
     min-width: 672px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.15);
     border-radius: 6px;
     background-color: #fff;
+    transition: all 0.3s;
 }
 
 .menu .menu-item .menu-dropdown:hover .item {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu .menu-item .item-1 .wrapper {
@@ -125,13 +136,12 @@ p {
 .menu .menu-item .item-1 .wrapper .title h4 {
     color: #fff;
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .menu .menu-item .item-1 .wrapper .title p {
     color: #fff;
     font-size: 15px;
-    font-weight: 400;
     line-height: 24px;
     margin-bottom: 16px;
 }
@@ -141,11 +151,11 @@ p {
     background-color: #fff;
     color: #1c4ce8;
     font-size: 17px;
-    font-weight: 600;
     margin-bottom: 16px;
     line-height: 27px;
     padding: 10px 16px;
     border-radius: 6px;
+    font-weight: 400;
 }
 
 .menu .menu-item .item-1 .content {
@@ -171,8 +181,9 @@ p {
 .menu .menu-item .item-1 .content li.name {
     color: #335eea;
     font-size: 12px;
-    font-weight: 600;
     text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .menu .menu-item .item-1 .content li {
@@ -184,7 +195,7 @@ p {
 a.link-text {
     color: #506690 !important;
     font-size: 15px !important;
-    font-weight: 400 !important;
+    font-weight: 300 !important;
     line-height: 24px !important;
 }
 
@@ -199,7 +210,6 @@ a.link-text span {
     color: #335eea;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 400;
 }
 
 .menu .menu-item .item-1 .content .cont {
@@ -208,11 +218,13 @@ a.link-text span {
 
 .menu .menu-item .item-2 {
     min-width: 560px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.15);
     border-radius: 6px;
+    transition: all 0.3s;
 }
 
 .menu .item-3 {
@@ -238,15 +250,15 @@ a.link-text span {
 .menu .item-3 .cont h5 {
     color: #335eea;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 18px;
+    letter-spacing: 1px;
 }
 
 .menu .item-3 .cont p {
     color: #506690;
     font-size: 15px;
-    font-weight: 400;
     line-height: 24px;
 }
 
@@ -259,19 +271,20 @@ a.link-text span {
     padding: 4px 12px;
     color: #335eea;
     font-size: 11.25px;
-    font-weight: 600;
     border-radius: 20px;
     background-color: rgba(51, 94, 234, 0.1);
 }
 
 .menu .menu-item .item-3 {
     min-width: 352px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.15);
     border-radius: 6px;
     background-color: #fff;
+    transition: all 0.3s;
 }
 
 .menu .item-3 .content .icon {
@@ -292,22 +305,26 @@ a.link-text span {
 
 .menu .menu-item .item-4 {
     min-width: 224px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     z-index: 1;
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.15);
     border-radius: 6px;
+    transition: all 0.3s;
 }
 
 .menu .menu-item a:hover .item-4 {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu .menu-item .item-4 .menu-dropdown .list-text {
     top: -26px;
     left: 224px;
     min-width: 224px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     z-index: 2;
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.15);
@@ -315,6 +332,7 @@ a.link-text span {
     padding: 26px 28px;
     border-radius: 6px;
     background-color: #fff;
+    transition: all 0.3s;
 }
 
 .menu .menu-item .item-4 .menu-dropdown .list-text li {
@@ -337,7 +355,8 @@ a.link-text span {
 }
 
 .menu .menu-item .item-4 .menu-dropdown:hover .list-text {
-    display: block !important;
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu .menu-item .item-4 .menu-dropdown:hover i {

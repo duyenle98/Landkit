@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landkit</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/toggle-switch.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <div class="menu container">
@@ -227,14 +238,20 @@
           </ul>
         </li>
 
-        <li class="btn-buy"><a href="#">Buy now</a></li>
+        <li class="btn-buy">
+          <a href="#">Buy now</a>
+          <i
+            class="fal fa-bars"
+            style="color: #161c2d; font-size: 26px; padding: 4px 12px;"
+          ></i>
+        </li>
       </ul>
     </div>
 
     <div class="welcome container">
       <div class="content">
-        <h1>Welcome to <span>Landkit</span>. Develop anything.</h1>
-        <p>
+        <h1>Welcome to <span>Landkit</span>.<br />Develop anything.</h1>
+        <p class="para-text">
           Build a beautiful, modern website with flexible Bootstrap components
           built from scratch.
         </p>
@@ -251,17 +268,17 @@
     </div>
 
     <div class="built container">
-      <div class="content" style="padding-right: 40px;">
+      <div class="content">
         <div class="icon"><img src="./images/toggle.svg" alt="" /></div>
-        <h4>Built for developers</h4>
+        <h4 class="title">Built for developers</h4>
         <p>
           Landkit is built to make your life easier. Variables, build tooling,
           documentation, and reusable components.
         </p>
       </div>
-      <div class="content" style="padding-right: 40px;">
+      <div class="content">
         <div class="icon"><img src="./images/design.svg" alt="" /></div>
-        <h4>Designed to be modern</h4>
+        <h4 class="title">Designed to be modern</h4>
         <p>
           Designed with the latest design trends in mind. Landkit feels modern,
           minimal, and beautiful.
@@ -269,7 +286,7 @@
       </div>
       <div class="content">
         <div class="icon"><img src="./images/coding.svg" alt="" /></div>
-        <h4>Documentation for everything</h4>
+        <h4 class="title">Documentation for everything</h4>
         <p>
           We've written extensive documentation for components and tools, so you
           never have to reverse engineer anything.
@@ -279,19 +296,19 @@
 
     <div class="wrapper-social">
       <div class="social container">
-        <div class="content" style="padding-right: 40px;">
+        <div class="content">
           <img src="./images/airbnb.svg" alt="" />
         </div>
-        <div class="content" style="padding-right: 40px;">
+        <div class="content">
           <img src="./images/coinbase.svg" alt="" />
         </div>
-        <div class="content" style="padding-right: 40px;">
+        <div class="content">
           <img src="./images/dribbble.svg" alt="" />
         </div>
-        <div class="content" style="padding-right: 40px;">
+        <div class="content">
           <img src="./images/instagram.svg" alt="" />
         </div>
-        <div class="content" style="padding-right: 40px;">
+        <div class="content">
           <img src="./images/netflix.svg" alt="" />
         </div>
         <div class="content">
@@ -302,86 +319,121 @@
 
     <div class="wrapper-resource">
       <div class="resource container">
-        <div class="content-1">
-          <div class="image">
-            <img src="./images/photo-2.jpg" alt="" />
-            <!-- <img src="./images/shape-1.svg" alt="" /> -->
-          </div>
-          <div class="wrapper-from">
-            <form action="">
-              <input type="text" name="" id="" placeholder="Name" />
-              <input type="text" name="" id="" placeholder="Email" />
-              <input type="password" name="" id="" placeholder="Password" />
-              <button type="submit">Download a sample</button>
-            </form>
+        <div class="content">
+          <div class="content-1">
+            <div class="image">
+              <img src="./images/photo-2.jpg" alt="" />
+              <div class="position-relative">
+                <div
+                  class="shape-1 shape shape-bottom shape-fluid-x svg-shim text-white"
+                >
+                  <svg
+                    viewBox="0 0 2880 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-from">
+              <form action="">
+                <input type="text" name="" id="" placeholder="Name" />
+                <input type="text" name="" id="" placeholder="Email" />
+                <input type="password" name="" id="" placeholder="Password" />
+                <button type="submit">Download a sample</button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="content-2">
-          <h3>
-            The most useful resource<br><span>ever created for developers.</span>
-          </h3>
-          <p>
-            Using Landkit to build your site means never worrying about
-            designing another page or cross browser compatibility. Our
-            ever-growing library of components and pre-designed layouts will
-            make your life easier.
-          </p>
-          <div class="group-item">
-            <div class="item">
-              <p>
-                <span><i class="fal fa-check"></i></span>
-                <span>Lifetime updates</span>
-              </p>
-              <p>
-                <span><i class="fal fa-check"></i></span>
-                <span>Tons of assets</span>
-              </p>
-            </div>
-            <div class="item">
-              <p>
-                <span><i class="fal fa-check"></i></span>
-                <span>Tech support</span>
-              </p>
-              <p>
-                <span><i class="fal fa-check"></i></span>
-                <span>Integration ready</span>
-              </p>
+        <div class="content">
+          <div class="content-2">
+            <h3 class="m-title">
+              The most useful resource<br /><span
+                >ever created for developers.</span
+              >
+            </h3>
+            <p class="s-para-text">
+              Using Landkit to build your site means never worrying about
+              designing another page or cross browser compatibility. Our
+              ever-growing library of components and pre-designed layouts will
+              make your life easier.
+            </p>
+            <div class="group-item">
+              <div class="item">
+                <p>
+                  <span><i class="fal fa-check"></i></span>
+                  <span>Lifetime updates</span>
+                </p>
+                <p>
+                  <span><i class="fal fa-check"></i></span>
+                  <span>Tons of assets</span>
+                </p>
+              </div>
+              <div class="item">
+                <p>
+                  <span><i class="fal fa-check"></i></span>
+                  <span>Tech support</span>
+                </p>
+                <p style="margin-bottom: 0;">
+                  <span><i class="fal fa-check"></i></span>
+                  <span>Integration ready</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="theme resource container">
-        <div class="image">
-          <img src="./images/dashkit.jpg" alt="" />
+        <div class="content">
+          <div class="image">
+            <img
+              src="./images/dashkit.jpg"
+              alt=""
+              style="border-radius: 10px;"
+            />
+          </div>
         </div>
-        <div class="content-2">
-          <h3>
-            We have lots of experience <span>building Bootstrap themes</span>.
-          </h3>
-          <p>
-            We've built well over a dozen Bootstrap themes and sold tens of
-            thousands of copies.
-          </p>
-          <div class="group-item">
-            <div class="item" style="margin-bottom: 32px;">
-              <div class="icon"><img src="./images/recycle.svg" alt="" /></div>
-              <div class="text">
-                <h4>Bootstrap users since the beginning</h4>
-                <p>
-                  We've been developing with Bootstrap since it was publicly
-                  released in 2011.
-                </p>
+        <div class="content">
+          <div class="content-2">
+            <h3 class="m-title">
+              We have lots of experience<br /><span
+                >building Bootstrap themes</span
+              >.
+            </h3>
+            <p class="s-para-text">
+              We've built well over a dozen Bootstrap themes and sold tens of
+              thousands of copies.
+            </p>
+            <div class="group-item">
+              <div class="item" style="margin-bottom: 32px;">
+                <div class="icon">
+                  <img src="./images/recycle.svg" alt="" />
+                </div>
+                <div class="text">
+                  <h4 class="s-para-text">
+                    Bootstrap users since the beginning
+                  </h4>
+                  <p>
+                    We've been developing with Bootstrap since it was publicly
+                    released in 2011.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="item">
-              <div class="icon"><img src="./images/coding.svg" alt="" /></div>
-              <div class="text">
-                <h4>Deep understanding of Bootstrap</h4>
-                <p>
-                  We've watched Bootstrap grow up over the years and understand
-                  it better than almost anyone.
-                </p>
+              <div class="item">
+                <div class="icon"><img src="./images/coding.svg" alt="" /></div>
+                <div class="text">
+                  <h4 class="s-para-text">Deep understanding of Bootstrap</h4>
+                  <p>
+                    We've watched Bootstrap grow up over the years and
+                    understand it better than almost anyone.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -390,22 +442,30 @@
 
       <div class="customer container">
         <div class="intro">
-          <h2>Our customers are our biggest fans.</h2>
-          <p>
+          <h2 class="m-title">Our customers are our biggest fans.</h2>
+          <p class="s-para-text">
             We dont' like to brag, but we don't mind letting our customers do it
             for us. Here are a few nice things folks have said about our themes
             over the years.
           </p>
         </div>
         <div class="content">
-          <div class="image">
-            <a href="#"
-              ><img
-                src="./images/photo-26.jpg"
-                alt=""
-                style="width: 100%; height: 100%; border-radius: 6px 0 0 6px;"
-            /></a>
-            <span class="arrow"><i class="fal fa-arrow-left"></i></span>
+          <div class="image" style="position: relative;">
+            <a href="#"></a>
+            <div
+              class="shape-2 shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block"
+            >
+              <svg
+                viewBox="0 0 112 690"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M116 0H51v172C76 384 0 517 0 517v173h116V0z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
           </div>
           <div class="text">
             <div class="icon"><img src="./images/airbnb-red.svg" alt="" /></div>
@@ -414,8 +474,9 @@
               I've ever used. I can't wait to use it again for my next project.”
             </p>
             <p class="author">Dave Gamache</p>
-            <span class="arrow"><i class="fal fa-arrow-right"></i></span>
           </div>
+          <span class="arrow"><i class="fal fa-arrow-left"></i></span>
+          <span class="arrow"><i class="fal fa-arrow-right"></i></span>
         </div>
       </div>
     </div>
@@ -424,27 +485,73 @@
         <div class="image">
           <img src="./images/illustration-8.png" alt="" />
         </div>
-        <div class="content-2" style="padding-right: 40px;">
-          <h3>
-            Stay focused on your business. <span style="color: #335eea;">Let us handle the design</span>.
+        <div class="content-2">
+          <h3 class="m-title">
+            Stay focused on your business.<br /><span style="color: #335eea;"
+              >Let us handle the design</span
+            >.
           </h3>
-          <p>
+          <p class="s-para-text">
             You have a business to run. Stop worring about cross-browser bugs,
             designing new pages, keeping your components up to date. Let us do
             that for you.
           </p>
           <div class="group-item">
-            <div class="item" style="padding-right: 24px; border-right: 1px solid #f1f4f8;">
-              <h4><span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>%</h4>
+            <div
+              class="item"
+              style="padding-right: 24px; border-right: 1px solid #f1f4f8;"
+            >
+              <h4 class="title">
+                <span
+                  data-toggle="countup"
+                  data-from="0"
+                  data-to="100"
+                  data-aos=""
+                  data-aos-id="countup:in"
+                  class="aos-init aos-animate counted"
+                  >100</span
+                >%
+              </h4>
               <p>Satisfaction</p>
             </div>
-            <div class="item" style="padding: 0 24px; border-right: 1px solid #f1f4f8;">
-              <h4><span data-toggle="countup" data-from="0" data-to="24" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">24</span>/ <span data-toggle="countup" data-from="0" data-to="7" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">7</span>
+            <div
+              class="item"
+              style="padding: 0 24px; border-right: 1px solid #d9e2ef;"
+            >
+              <h4 class="title">
+                <span
+                  data-toggle="countup"
+                  data-from="0"
+                  data-to="24"
+                  data-aos=""
+                  data-aos-id="countup:in"
+                  class="aos-init aos-animate counted"
+                  >24</span
+                >/
+                <span
+                  data-toggle="countup"
+                  data-from="0"
+                  data-to="7"
+                  data-aos=""
+                  data-aos-id="countup:in"
+                  class="aos-init aos-animate counted"
+                  >7</span
+                >
               </h4>
               <p>Support</p>
             </div>
             <div class="item" style="padding-left: 24px;">
-              <h4><span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>k+</h4>
+              <h4 class="title">
+                <span
+                  data-toggle="countup"
+                  data-from="0"
+                  data-to="100"
+                  data-aos=""
+                  data-aos-id="countup:in"
+                  class="aos-init aos-animate counted"
+                  >100</span
+                >k+
+              </h4>
               <p>Sales</p>
             </div>
           </div>
@@ -453,14 +560,15 @@
 
       <div class="fair customer container" style="padding-bottom: 96px;">
         <div class="intro">
-          <h2>Fair, simple pricing for all.</h2>
-          <p>
-            All types of businesses need access to development resources, so we give you the option to decide how much you need to use. 
+          <h2 class="l-title">Fair, simple pricing for all.</h2>
+          <p class="para-text">
+            All types of businesses need access to development resources, so we
+            give you the option to decide how much you need to use.
           </p>
           <div class="toggle" style="margin-bottom: 64px;">
             <span>Annual</span>
             <label class="switch">
-              <input type="checkbox">
+              <input type="checkbox" />
               <span class="slider round"></span>
             </label>
             <span>Monthly</span>
@@ -468,21 +576,47 @@
         </div>
         <div class="content">
           <div class="cont">
-            <div class="info" style="max-width: 64%; margin-left: auto; margin-right: auto; padding: 50px 0;">
+            <div
+              class="info"
+              style="
+                max-width: 64%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 50px 0;
+              "
+            >
               <div class="center" style="text-align: center;">
                 <span class="type" style="margin-bottom: 24px;">Standard</span>
-                <div style="font-size: 61px; position: relative;">
-                  <span style="font-size: 31px; position: absolute; left: 74px; top: 8px;">$</span>49
-                  <span style="font-size: 31px;">/mo</span></div>
+                <div class="m-price" style="font-size: 61px;">
+                  <sup class="m-title" style="font-size: 31px;">$</sup>49<span
+                    class="m-title"
+                    style="font-size: 31px;"
+                    >/mo</span
+                  >
+                </div>
                 <p>per seat</p>
               </div>
 
               <ul>
-                <li><span><i class="fal fa-check"></i></span>Rich, responsive landing pages</li>
-                <li><span><i class="fal fa-check"></i></span>100+ styled components</li>
-                <li><span><i class="fal fa-check"></i></span>Flexible, simple license</li>
-                <li><span><i class="fal fa-check"></i></span>Speedy build tooling</li>
-                <li style="margin-bottom: 0;"><span><i class="fal fa-check"></i></span>6 months free support included</li>
+                <li>
+                  <span><i class="fal fa-check"></i></span>Rich, responsive
+                  landing pages
+                </li>
+                <li>
+                  <span><i class="fal fa-check"></i></span>100+ styled
+                  components
+                </li>
+                <li>
+                  <span><i class="fal fa-check"></i></span>Flexible, simple
+                  license
+                </li>
+                <li>
+                  <span><i class="fal fa-check"></i></span>Speedy build tooling
+                </li>
+                <li style="margin-bottom: 0;">
+                  <span><i class="fal fa-check"></i></span>6 months free support
+                  included
+                </li>
               </ul>
             </div>
             <a href="#" style="border-radius: 0 0 6px 6px;">Get it now</a>
@@ -490,31 +624,49 @@
 
           <div class="cont">
             <div class="info" style="padding: 50px 60px; text-align: center;">
-              <span class="type" style="margin-bottom: 96px;">Enterprise</span>
-              <p class="para">We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.</p>
+              <span class="type type-2" style="margin-bottom: 96px;"
+                >Enterprise</span
+              >
+              <p class="para para-text">
+                We offer variable pricing with discounts for larger
+                organizations. Get in touch with us and we’ll figure out
+                something that works for everyone.
+              </p>
             </div>
-            <a href="#" class="contact" style="border-radius: 0 0 6px 0;">Contact us</a>
+            <a href="#" class="contact" style="border-radius: 0 0 6px 6px;"
+              >Contact us</a
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <div class="question-wrapper" style="background-color: #1c2b4f;">
+    <div
+      class="question-wrapper"
+      style="background-color: #1c2b4f; padding-top: 96px;"
+    >
       <div class="question container">
         <div class="top">
-          <div class="content" style="padding-right: 40px;">
+          <div class="content">
             <div class="cont" style="margin-bottom: 48px;">
               <div class="icon">?</div>
               <div class="text">
-                <h4>Can I use Landkit for my clients?</h4>
-                <p>Absolutely. The Bootstrap Themes license allows you to build a websites for personal use or for a client.</p>
+                <h4 class="s-para-text">Can I use Landkit for my clients?</h4>
+                <p>
+                  Absolutely. The Bootstrap Themes license allows you to build a
+                  websites for personal use or for a client.
+                </p>
               </div>
             </div>
             <div class="cont">
               <div class="icon">?</div>
               <div class="text">
-                <h4>Do I get free updates?</h4>
-                <p>Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.</p>
+                <h4 class="s-para-text">Do I get free updates?</h4>
+                <p>
+                  Yes. We update all of our themes with each Bootstrap update,
+                  plus are constantly adding new components, pages, and features
+                  to our themes.
+                </p>
               </div>
             </div>
           </div>
@@ -523,41 +675,75 @@
             <div class="cont" style="margin-bottom: 48px;">
               <div class="icon">?</div>
               <div class="text">
-                <h4>Is there a money back guarantee?</h4>
-                <p>Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.</p>
+                <h4 class="s-para-text">Is there a money back guarantee?</h4>
+                <p>
+                  Yup! Bootstrap Themes come with a satisfaction guarantee.
+                  Submit a return and get your money back.
+                </p>
               </div>
             </div>
             <div class="cont">
               <div class="icon">?</div>
               <div class="text">
-                <h4>Does it work with Rails? React? Laravel?</h4>
-                <p>Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.</p>
+                <h4 class="s-para-text">
+                  Does it work with Rails? React? Laravel?
+                </h4>
+                <p>
+                  Yes. Landkit has basic CSS/JS files you can include. If you
+                  want to enable deeper customization, you can integrate it into
+                  your assets pipeline or build processes.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div class="bottom">
           <span>Get started</span>
-          <h1>Get Landkit and save your time.</h1>
-          <p>Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.</p>
-          <a href="#">Buy it now <i class="fal fa-arrow-right" style="margin-left: 6px; font-size: 13px; font-weight: 500;"></i></a>
+          <h1 class="xl-title">Get Landkit and save your time.</h1>
+          <p class="s-para-text">
+            Stop wasting time trying to do it the "right way" and build a site
+            from scratch. Landkit is faster, easier, and you still have complete
+            control.
+          </p>
+          <a href="#"
+            >Buy it now
+            <i
+              class="fal fa-arrow-right"
+              style="margin-left: 6px; font-size: 13px; font-weight: 400;"
+            ></i
+          ></a>
         </div>
+      </div>
+    </div>
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        <svg
+          style="color: #f1f4f8;"
+          viewBox="0 0 2880 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
+            fill="currentColor"
+          ></path>
+        </svg>
       </div>
     </div>
 
     <div class="footer-wrapper">
       <div class="footer container">
-        <div class="footer-social" style="padding-right: 40px;">
-          <img class="logo" src="./images/brand.svg" alt="">
+        <div class="footer-social">
+          <img class="logo" src="./images/brand.svg" alt="" />
           <p>A better way to build.</p>
           <div class="icon">
-            <a href="#"><img src="./images/instagram-icon.svg" alt=""></a>
-            <a href="#"><img src="./images/facebook.svg" alt=""></a>
-            <a href="#"><img src="./images/twitter.svg" alt=""></a>
-            <a href="#"><img src="./images/pinterest-icon.svg" alt=""></a>
+            <a href="#"><img src="./images/instagram-icon.svg" alt="" /></a>
+            <a href="#"><img src="./images/facebook.svg" alt="" /></a>
+            <a href="#"><img src="./images/twitter.svg" alt="" /></a>
+            <a href="#"><img src="./images/pinterest-icon.svg" alt="" /></a>
           </div>
         </div>
-        <div class="list" style="padding-right: 40px;">
+        <div class="list list-1">
           <h6>Products</h6>
           <ul>
             <li><a href="#">Page Builder</a></li>
@@ -567,7 +753,7 @@
             <li><a href="#">Changelog</a></li>
           </ul>
         </div>
-        <div class="list" style="padding-right: 40px;">
+        <div class="list">
           <h6>Services</h6>
           <ul>
             <li><a href="#">Documentation</a></li>
@@ -576,7 +762,7 @@
             <li><a href="#">UI Kit</a></li>
           </ul>
         </div>
-        <div class="list" style="padding-right: 40px;">
+        <div class="list list-3">
           <h6>Connect</h6>
           <ul>
             <li><a href="#">Page Builder</a></li>
