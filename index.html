@@ -12,20 +12,14 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
     <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/toggle-menu.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/slide.css" />
   </head>
-  <body>
+  <body id="main">
     <div class="menu container">
       <ul class="main">
         <li class="logo">
@@ -238,7 +232,7 @@
           </ul>
         </li>
 
-        <li class="btn-buy">
+        <li class="btn-buy" onclick="showToggleMenu();">
           <a href="#">Buy now</a>
           <i
             class="fal fa-bars"
@@ -246,6 +240,197 @@
           ></i>
         </li>
       </ul>
+    </div>
+
+    <div class="wrapper-toggle-menu">
+      <div class="toggle-menu" id="toggle-menu">
+        <ul class="navbar">
+          <i class="fal fa-times" onclick="hiddenToggleMenu();"></i>
+          <li style="border-bottom: 1px solid #f1f4f8;">
+            <a href="#">Landings</a>
+            <div class="item item-1">
+              <div class="left">
+                <ul style="margin-bottom: 1.5rem;">
+                  <li class="name">Services</li>
+                  <li><a href="#">Coworking</a></li>
+                  <li><a href="#">Rental</a></li>
+                  <li><a href="#">Job Listing</a></li>
+                </ul>
+                <ul>
+                  <li class="name">Apps</li>
+                  <li><a href="#">Desktop</a></li>
+                  <li><a href="#">Mobile</a></li>
+                </ul>
+              </div>
+              <div class="right">
+                <ul>
+                  <li class="name">Web</li>
+                  <li><a href="#">Basic</a></li>
+                  <li>
+                    <a href="#">Startup <span>(New)</span></a>
+                  </li>
+                  <li><a href="#">Enterprise</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Cloud Hosting</a></li>
+                  <li><a href="#">Agency</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li style="border-bottom: 1px solid #f1f4f8;">
+            <a href="#">Pages</a>
+            <div class="item item-2">
+              <div class="left">
+                <ul style="margin-bottom: 1.5rem;">
+                  <li class="name">Career</li>
+                  <li><a href="#">Listing</a></li>
+                  <li><a href="#">Opening</a></li>
+                </ul>
+                <ul style="margin-bottom: 1.5rem;">
+                  <li class="name">Company</li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Terms</a></li>
+                </ul>
+                <ul style="margin-bottom: 1.5rem;">
+                  <li class="name">Help center</li>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Article</a></li>
+                </ul>
+                <ul>
+                  <li class="name">Contact</li>
+                  <li><a href="#">Basic</a></li>
+                  <li><a href="#">Cover</a></li>
+                </ul>
+              </div>
+              <div class="right">
+                <ul style="margin-bottom: 1.5rem;">
+                  <li class="name">Blog</li>
+                  <li><a href="#">Rich View</a></li>
+                  <li><a href="#">Article</a></li>
+                  <li><a href="#">Showcase</a></li>
+                  <li><a href="#">Search</a></li>
+                </ul>
+                <ul>
+                  <li class="name">Portfolio (new)</li>
+                  <li><a href="#">Masonry</a></li>
+                  <li><a href="#">Grid Rows</a></li>
+                  <li><a href="#">Parallax</a></li>
+                  <li><a href="#">Case Study</a></li>
+                  <li><a href="#">Sidebar</a></li>
+                  <li><a href="#">Sidebar: Fluid</a></li>
+                  <li><a href="#">Basic Grid</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li style="border-bottom: 1px solid #f1f4f8;">
+            <a href="#">Account</a>
+            <div class="item item-3">
+              <div
+                class="content toggle-menu-dropdown menu-dropdown"
+                id="menu-dropdown"
+              >
+                <a class="link-text">Settings <span>(New)</span></a>
+                <i class="fal fa-angle-down show"></i>
+                <ul class="list-text toggle-list-text" id="list-text">
+                  <li><a>General</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Notifications</a></li>
+                  <li><a href="#">Plans & Payment</a></li>
+                  <li><a href="#">Users</a></li>
+                </ul>
+              </div>
+              <div class="content toggle-menu-dropdown menu-dropdown">
+                <a class="link-text">Sign In</a>
+                <i class="fal fa-angle-down show"></i>
+                <ul class="list-text toggle-list-text">
+                  <li><a href="#">Side Cover</a></li>
+                  <li><a href="#">Illustration</a></li>
+                  <li><a href="#">Basic</a></li>
+                  <li><a href="#">Modal Horizontal</a></li>
+                  <li><a href="#">Modal Vertical</a></li>
+                </ul>
+              </div>
+              <div class="content toggle-menu-dropdown menu-dropdown">
+                <a class="link-text">Sign Up</a>
+                <i class="fal fa-angle-down show"></i>
+                <ul class="list-text toggle-list-text">
+                  <li><a href="#">Side Cover</a></li>
+                  <li><a href="#">Illustration</a></li>
+                  <li><a href="#">Basic</a></li>
+                  <li><a href="#">Modal Horizontal</a></li>
+                  <li><a href="#">Modal Vertical</a></li>
+                </ul>
+              </div>
+              <div class="content toggle-menu-dropdown menu-dropdown">
+                <a class="link-text">Password Reset</a>
+                <i class="fal fa-angle-down show"></i>
+                <ul class="list-text toggle-list-text">
+                  <li><a href="#">Side Cover</a></li>
+                  <li><a href="#">Illustration</a></li>
+                  <li><a href="#">Basic</a></li>
+                </ul>
+              </div>
+              <div class="content toggle-menu-dropdown menu-dropdown">
+                <a class="link-text">Error</a>
+                <i class="fal fa-angle-down show"></i>
+                <ul class="list-text toggle-list-text">
+                  <li><a href="#">Side Cover</a></li>
+                  <li><a href="#">Illustration</a></li>
+                  <li><a href="#">Basic</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">Documentation</a>
+            <div class="item item-4">
+              <div class="content" style="padding-top: 0;">
+                <div class="icon">
+                  <img src="./images/document.svg" alt="" />
+                </div>
+                <div class="cont">
+                  <h5 class="name">Documentation</h5>
+                  <p>Customizing and building</p>
+                </div>
+                <div class="ver"></div>
+              </div>
+              <div class="content">
+                <div class="icon">
+                  <img src="./images/components.svg" alt="" />
+                </div>
+                <div class="cont">
+                  <h5 class="name">Components</h5>
+                  <p>Full list of components</p>
+                </div>
+                <div class="ver"></div>
+              </div>
+              <div
+                class="content"
+                style="padding-bottom: 0; border-bottom: none;"
+              >
+                <div class="icon">
+                  <img src="./images/changelog.svg" alt="" />
+                </div>
+                <div class="cont">
+                  <h5 class="name">Changelog</h5>
+                  <p>Keep track of changes</p>
+                </div>
+                <div class="ver">
+                  <span>1.2.0</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="btn-buy" style="padding: 0;">
+            <a href="#">Buy now</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="welcome container">
@@ -341,10 +526,25 @@
               </div>
             </div>
             <div class="wrapper-from">
-              <form action="">
-                <input type="text" name="" id="" placeholder="Name" />
-                <input type="text" name="" id="" placeholder="Email" />
-                <input type="password" name="" id="" placeholder="Password" />
+              <form
+                action=""
+                name="form-download"
+                onsubmit="return validateForm();"
+              >
+                <input type="text" name="f-name" id="" placeholder="Name" />
+                <small id="validate-name" style="color: orangered;"></small>
+                <input type="text" name="f-email" id="" placeholder="Email" />
+                <small id="validate-email" style="color: orangered;"></small>
+                <input
+                  type="password"
+                  name="f-password"
+                  id=""
+                  placeholder="Password"
+                />
+                <small
+                  id="validate-password"
+                  style="color: orangered; margin-bottom: 5px;"
+                ></small>
                 <button type="submit">Download a sample</button>
               </form>
             </div>
@@ -354,7 +554,7 @@
           <div class="content-2">
             <h3 class="m-title">
               The most useful resource<br /><span
-                >ever created for developers.</span
+                >ever created for <span id="resource-text"></span>|</span
               >
             </h3>
             <p class="s-para-text">
@@ -449,35 +649,172 @@
             over the years.
           </p>
         </div>
-        <div class="content">
-          <div class="image" style="position: relative;">
-            <a href="#"></a>
-            <div
-              class="shape-2 shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block"
-            >
-              <svg
-                viewBox="0 0 112 690"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M116 0H51v172C76 384 0 517 0 517v173h116V0z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+        <div class="slide">
+          <a class="slick-arrow slick-prev">
+            <i class="fal fa-arrow-left"></i>
+          </a>
+          <div class="slick-list">
+            <div class="wrapper wrapperCustomer">
+              <div class="content contentCustomer fade" id="lastClone">
+                <div class="wrap" style="display: flex;">
+                  <div class="image" style="position: relative;">
+                    <a
+                      href="#"
+                      style="background-image: url(./images/photo-26-2.jpg);"
+                    ></a>
+                    <div
+                      class="shape-2 shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block"
+                    >
+                      <svg
+                        viewBox="0 0 112 690"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M116 0H51v172C76 384 0 517 0 517v173h116V0z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <div class="icon">
+                      <img src="./images/instagram-slide.svg" alt="" />
+                    </div>
+                    <p>
+                      “I've never used a theme as versatile and flexible as
+                      Landkit. It's my go to for building landing sites on
+                      almost any project.”
+                    </p>
+                    <p class="author">Russ D'Sa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content contentCustomer fade">
+                <div class="wrap" style="display: flex;">
+                  <div class="image" style="position: relative;">
+                    <a href="#"></a>
+                    <div
+                      class="shape-2 shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block"
+                    >
+                      <svg
+                        viewBox="0 0 112 690"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M116 0H51v172C76 384 0 517 0 517v173h116V0z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <div class="icon">
+                      <img src="./images/airbnb-red.svg" alt="" />
+                    </div>
+                    <p>
+                      “Landkit is hands down the most useful front end Bootstrap
+                      theme I've ever used. I can't wait to use it again for my
+                      next project.”
+                    </p>
+                    <p class="author">Dave Gamache</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content contentCustomer fade">
+                <div class="wrap" style="display: flex;">
+                  <div class="image" style="position: relative;">
+                    <a
+                      href="#"
+                      style="background-image: url(./images/photo-26-2.jpg);"
+                    ></a>
+                    <div
+                      class="shape-2 shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block"
+                    >
+                      <svg
+                        viewBox="0 0 112 690"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M116 0H51v172C76 384 0 517 0 517v173h116V0z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <div class="icon">
+                      <img src="./images/instagram-slide.svg" alt="" />
+                    </div>
+                    <p>
+                      “I've never used a theme as versatile and flexible as
+                      Landkit. It's my go to for building landing sites on
+                      almost any project.”
+                    </p>
+                    <p class="author">Russ D'Sa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content contentCustomer fade" id="firstClone">
+                <div class="wrap" style="display: flex;">
+                  <div class="image" style="position: relative;">
+                    <a href="#"></a>
+                    <div
+                      class="shape-2 shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block"
+                    >
+                      <svg
+                        viewBox="0 0 112 690"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M116 0H51v172C76 384 0 517 0 517v173h116V0z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <div class="icon">
+                      <img src="./images/airbnb-red.svg" alt="" />
+                    </div>
+                    <p>
+                      “Landkit is hands down the most useful front end Bootstrap
+                      theme I've ever used. I can't wait to use it again for my
+                      next project.”
+                    </p>
+                    <p class="author">Dave Gamache</p>
+                  </div>
+                </div>
+              </div>
+              <!-- <span class="arrow slick-prev" onclick="plusSlides(-1)"
+            ><i class="fal fa-arrow-left"></i
+          ></span>
+          <span class="arrow slick-next" onclick="plusSlides(1)"
+            ><i class="fal fa-arrow-right"></i
+          ></span> -->
             </div>
           </div>
-          <div class="text">
-            <div class="icon"><img src="./images/airbnb-red.svg" alt="" /></div>
-            <p>
-              “Landkit is hands down the most useful front end Bootstrap theme
-              I've ever used. I can't wait to use it again for my next project.”
-            </p>
-            <p class="author">Dave Gamache</p>
-          </div>
-          <span class="arrow"><i class="fal fa-arrow-left"></i></span>
-          <span class="arrow"><i class="fal fa-arrow-right"></i></span>
+          <a class="slick-arrow slick-next">
+            <i class="fal fa-arrow-right"></i>
+          </a>
+          <ul class="slick-dots">
+            <li class="slick-active">
+              <button>1</button>
+            </li>
+            <li class="">
+              <button>2</button>
+            </li>
+          </ul>
         </div>
+
+        <!-- The dots/circles
+        <div style="text-align: center;">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div> -->
       </div>
     </div>
     <div class="business-wrapper">
@@ -784,5 +1121,7 @@
         </div>
       </div>
     </div>
+
+    <script src="./js/event.js"></script>
   </body>
 </html>

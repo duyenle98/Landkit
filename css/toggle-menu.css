@@ -1,0 +1,174 @@
+.toggle-menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.4s;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.toggle-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.toggle-menu .fa-times {
+  color: #506690;
+  font-size: 19px;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  padding: 4px 12px;
+}
+
+.toggle-menu .item {
+  display: flex;
+}
+
+.toggle-menu .item.item-3 {
+  flex-direction: column;
+}
+
+.toggle-menu .item.item-4 {
+  flex-direction: column;
+}
+
+.toggle-menu .item .left {
+  flex-basis: 50%;
+}
+
+.toggle-menu .item .right {
+  flex-basis: 50%;
+}
+
+.toggle-menu .navbar > li {
+  padding: 1.5rem;
+}
+
+.toggle-menu .navbar > li > a {
+  display: inline-block;
+  color: #506690;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-menu .item .name {
+  color: #335eea;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.toggle-menu .item li a {
+  display: inline-block;
+  color: #506690;
+  font-size: 0.9375rem;
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.toggle-menu .item li a:hover {
+  color: #335eea;
+}
+
+.toggle-menu .item-3 .menu-dropdown:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.toggle-menu .item-3 .menu-dropdown {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toggle-menu .item-3 .menu-dropdown .link-text {
+  flex-basis: 50%;
+}
+
+.toggle-menu .item-3 .menu-dropdown i {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.toggle-menu .item-3 .menu-dropdown .list-text {
+  flex-basis: 100%;
+  display: none;
+  padding: 16px 8px;
+}
+
+.toggle-menu .item-3 .menu-dropdown .list-text.show {
+  display: block;
+}
+
+.toggle-menu .item-3 .menu-dropdown:hover i {
+  color: #335eea;
+}
+
+.toggle-menu .item-3 .menu-dropdown i {
+  color: #506690;
+  font-size: 18px;
+}
+
+.toggle-menu .item-3 .menu-dropdown i.fa-angle-down.show {
+  display: block;
+  transform: rotate(0deg);
+}
+
+.toggle-menu .item-3 .menu-dropdown i.fa-angle-down {
+  display: none;
+}
+
+.toggle-menu .item-4 .content {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f1f4f8;
+}
+
+.toggle-menu .item-4 .icon img {
+  width: 36px;
+  margin-right: 1rem;
+}
+
+.toggle-menu .item-4 p {
+  color: #506690;
+  font-size: 0.9375rem;
+}
+
+.toggle-menu .item-4 .ver {
+  margin-left: auto;
+}
+
+.toggle-menu .item-4 .ver span {
+  display: inline-block;
+  padding: 4px 12px;
+  color: #335eea;
+  font-size: 11.25px;
+  border-radius: 20px;
+  background-color: rgba(51, 94, 234, 0.1);
+}
+
+.toggle-menu .btn-buy a {
+  background-color: #335eea;
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  padding: 13px 20px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 27px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.toggle-menu .btn-buy a:hover {
+  background-color: #1643d4;
+  transform: translateY(-3px);
+}
