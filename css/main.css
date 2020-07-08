@@ -423,11 +423,15 @@ svg {
   margin-bottom: 64px;
 }
 
+.customer .wrapper {
+  position: relative;
+}
+
 .customer .content {
   display: flex;
   border-radius: 6px;
   background-color: #fff;
-  position: relative;
+  /* position: relative; */
 }
 
 .customer .content .image {
@@ -450,7 +454,7 @@ svg {
   border-radius: 6px 0 0 6px;
 }
 
-.customer .content span.arrow {
+.customer .wrapper span.arrow {
   width: 55px;
   height: 55px;
   background-color: #335eea;
@@ -464,12 +468,12 @@ svg {
   margin-top: -27.5px;
 }
 
-.customer .content span.arrow:last-child {
+.customer .wrapper span.arrow:last-child {
   left: auto;
   right: -27.5px;
 }
 
-.customer .content i {
+.customer .wrapper i {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
