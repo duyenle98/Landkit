@@ -118,12 +118,13 @@
 }
 
 .toggle-menu .item-3 .menu-dropdown i.fa-angle-down.show {
-  display: block;
   transform: rotate(0deg);
+  text-align: right;
 }
 
 .toggle-menu .item-3 .menu-dropdown i.fa-angle-down {
-  display: none;
+  transform: rotate(180deg);
+  text-align: left;
 }
 
 .toggle-menu .item-4 .content {

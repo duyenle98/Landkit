@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/slide.css" />
   </head>
-  <body id="main">
+  <body id="main" class="main">
     <div class="menu container">
       <ul class="main">
         <li class="logo">
@@ -232,7 +232,7 @@
           </ul>
         </li>
 
-        <li class="btn-buy" onclick="showToggleMenu();">
+        <li class="btn-buy">
           <a href="#">Buy now</a>
           <i
             class="fal fa-bars"
@@ -245,7 +245,7 @@
     <div class="wrapper-toggle-menu">
       <div class="toggle-menu" id="toggle-menu">
         <ul class="navbar">
-          <i class="fal fa-times" onclick="hiddenToggleMenu();"></i>
+          <i class="fal fa-times"></i>
           <li style="border-bottom: 1px solid #f1f4f8;">
             <a href="#">Landings</a>
             <div class="item item-1">
@@ -529,16 +529,15 @@
               <form
                 action=""
                 name="form-download"
-                onsubmit="return validateForm();"
+                onsubmit="validateForm(event);"
               >
-                <input type="text" name="f-name" id="" placeholder="Name" />
+                <input type="text" name="f-name" placeholder="Name" />
                 <small id="validate-name" style="color: orangered;"></small>
-                <input type="text" name="f-email" id="" placeholder="Email" />
+                <input type="text" name="f-email" placeholder="Email" />
                 <small id="validate-email" style="color: orangered;"></small>
                 <input
                   type="password"
                   name="f-password"
-                  id=""
                   placeholder="Password"
                 />
                 <small
@@ -553,8 +552,10 @@
         <div class="content">
           <div class="content-2">
             <h3 class="m-title">
-              The most useful resource<br /><span
-                >ever created for <span id="resource-text"></span>|</span
+              The most useful resource<br />
+              <span
+                >ever created for <span id="resource-text"></span
+                ><span id="cursor">|</span></span
               >
             </h3>
             <p class="s-para-text">
@@ -789,12 +790,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <span class="arrow slick-prev" onclick="plusSlides(-1)"
-            ><i class="fal fa-arrow-left"></i
-          ></span>
-          <span class="arrow slick-next" onclick="plusSlides(1)"
-            ><i class="fal fa-arrow-right"></i
-          ></span> -->
             </div>
           </div>
           <a class="slick-arrow slick-next">
@@ -905,7 +900,7 @@
           <div class="toggle" style="margin-bottom: 64px;">
             <span>Annual</span>
             <label class="switch">
-              <input type="checkbox" />
+              <input id="toggle" type="checkbox" onclick="check();" />
               <span class="slider round"></span>
             </label>
             <span>Monthly</span>
@@ -925,11 +920,9 @@
               <div class="center" style="text-align: center;">
                 <span class="type" style="margin-bottom: 24px;">Standard</span>
                 <div class="m-price" style="font-size: 61px;">
-                  <sup class="m-title" style="font-size: 31px;">$</sup>49<span
-                    class="m-title"
-                    style="font-size: 31px;"
-                    >/mo</span
-                  >
+                  <sup class="m-title" style="font-size: 31px;">$</sup
+                  ><span id="number">29</span
+                  ><span class="m-title" style="font-size: 31px;">/mo</span>
                 </div>
                 <p>per seat</p>
               </div>
@@ -1122,6 +1115,7 @@
       </div>
     </div>
 
-    <script src="./js/event.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/event-jquery.js"></script>
   </body>
 </html>
